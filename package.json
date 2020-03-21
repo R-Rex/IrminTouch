@@ -1,0 +1,28 @@
+{
+  "name": "irmintouch",
+  "version": "1.0.0",
+  "description": "Emulateur DofusTouch",
+  "main": "/Auth/index.ts",
+  "scripts": {
+    "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/Auth/index.js\"",
+    "start": "tsc && node dist/Auth/index.js"
+  },
+  "author": "Rrex",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "body-parser": "^1.19.0",
+    "engine.io": "^3.4.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "primus": "^7.3.4",
+    "reflect-metadata": "^0.1.13"
+  }
+}
